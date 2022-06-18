@@ -1,0 +1,28 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101424",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "ic_tray_plastic",
+  "fields": [
+    {
+      "fieldName": "brandName",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ICTrayPlastic",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "material",
+      "otherEntityRelationshipName": "icTrayPlastic",
+      "relationshipName": "material",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,96 @@
+<div>
+  <h2 id="page-heading" data-cy="GRNLotHeading">
+    <span jhiTranslate="invMgmtApplicationApp.gRNLot.home.title">GRN Lots</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="reset()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="invMgmtApplicationApp.gRNLot.home.refreshListLabel">Refresh List</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-grn-lot-my-suffix"
+        [routerLink]="['/grn-lot-my-suffix/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="invMgmtApplicationApp.gRNLot.home.createLabel"> Create a new GRN Lot </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="gRNLots?.length === 0">
+    <span jhiTranslate="invMgmtApplicationApp.gRNLot.home.notFound">No gRNLots found</span>
+  </div>
+
+  <div class="table-responsive" id="entities" *ngIf="gRNLots && gRNLots.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="reset()">
+          <th scope="col" jhiSortBy="id"><span jhiTranslate="global.field.id">ID</span> <fa-icon icon="sort"></fa-icon></th>
+          <th scope="col" jhiSortBy="grnCode">
+            <span jhiTranslate="invMgmtApplicationApp.gRNLot.grnCode">Grn Code</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="collectionDate">
+            <span jhiTranslate="invMgmtApplicationApp.gRNLot.collectionDate">Collection Date</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="vehicleNumber">
+            <span jhiTranslate="invMgmtApplicationApp.gRNLot.vehicleNumber">Vehicle Number</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="srcOfMaterials">
+            <span jhiTranslate="invMgmtApplicationApp.gRNLot.srcOfMaterials">Src Of Materials</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col" jhiSortBy="totalWeight">
+            <span jhiTranslate="invMgmtApplicationApp.gRNLot.totalWeight">Total Weight</span> <fa-icon icon="sort"></fa-icon>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody infinite-scroll (scrolled)="loadPage(page + 1)" [infiniteScrollDisabled]="page >= links['last']" [infiniteScrollDistance]="0">
+        <tr *ngFor="let gRNLot of gRNLots; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/grn-lot-my-suffix', gRNLot.id, 'view']">{{ gRNLot.id }}</a>
+          </td>
+          <td>{{ gRNLot.grnCode }}</td>
+          <td>{{ gRNLot.collectionDate | formatMediumDatetime }}</td>
+          <td>{{ gRNLot.vehicleNumber }}</td>
+          <td>{{ gRNLot.srcOfMaterials }}</td>
+          <td>{{ gRNLot.totalWeight }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/grn-lot-my-suffix', gRNLot.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/grn-lot-my-suffix', gRNLot.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(gRNLot)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

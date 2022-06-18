@@ -1,0 +1,35 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101423",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "material",
+  "fields": [
+    {
+      "fieldName": "typeOfMaterial",
+      "fieldType": "MaterialType",
+      "fieldValues": "PS,PC,ABS,HIPS,PET,HDPE",
+      "javadoc": "The typeOfMaterial attribute."
+    },
+    {
+      "fieldName": "subTotalWeight",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "The Material entity.",
+  "jpaMetamodelFiltering": false,
+  "name": "Material",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "iCTrayPlastic",
+      "otherEntityRelationshipName": "material",
+      "relationshipName": "icTrayPlastic",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

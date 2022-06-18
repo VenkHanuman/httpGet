@@ -1,0 +1,83 @@
+/**
+ * JHipster JDL model for invMgmtMicroservice
+ */
+
+// ==============================
+// Entity definitions starts here
+// ==============================
+
+/**
+ * GRN Lot entity.
+ * @author The SgSv team.
+ */
+entity GRNLot {
+	grnCode String
+	collectionDate Instant
+	vehicleNumber String
+	srcOfMaterials String
+	totalWeight Long
+}
+
+/**
+ * The Material entity.
+ */
+entity Material {
+    /**
+    * The typeOfMaterial attribute.
+    */
+	typeOfMaterial MaterialType
+	subTotalWeight Long
+}
+
+
+entity ICTrayPlastic {
+	brandName String	
+}
+
+
+entity DisposedWaste {
+	subTotal Long	
+}
+
+entity MaterialOutput {
+	typeOfMatrial MaterialType
+	subTotal Long	
+}
+
+
+entity Destination {
+	name String
+		
+}
+
+
+entity OutputBundle {
+	total Long
+	totalOfDisposableWaste Long
+}
+
+enum MaterialType {
+    PS, PC, ABS, HIPS, PET, HDPE
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Material{icTrayPlastic} to ICTrayPlastic,
+	MaterialOutput{destination} to Destination
+}
+
+
+// =======
+// Options
+// =======
+
+// Set pagination options
+paginate GRNLot, Material with infinite-scroll
+paginate OutputBundle with pagination
+
+dto * with mapstruct
+
+// Set service options to all 
+service all with serviceImpl 
+// Set an angular suffix
+angularSuffix * with mySuffix

@@ -1,0 +1,29 @@
+{
+  "invMgmtApplicationApp": {
+    "material": {
+      "home": {
+        "title": "Materials",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Material-ஐ உருவாக்கு",
+        "createOrEditLabel": "Material -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Materials found"
+      },
+      "created": "Material புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Material மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Material நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Material {{ id }}?"
+      },
+      "detail": {
+        "title": "Material"
+      },
+      "id": "ID",
+      "typeOfMaterial": "Type Of Material",
+      "subTotalWeight": "Sub Total Weight",
+      "icTrayPlastic": "Ic Tray Plastic",
+      "help": {
+        "typeOfMaterial": "The typeOfMaterial attribute."
+      }
+    }
+  }
+}

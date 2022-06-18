@@ -1,0 +1,33 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101426",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "material_output",
+  "fields": [
+    {
+      "fieldName": "typeOfMatrial",
+      "fieldType": "MaterialType",
+      "fieldValues": "PS,PC,ABS,HIPS,PET,HDPE"
+    },
+    {
+      "fieldName": "subTotal",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "MaterialOutput",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "destination",
+      "otherEntityRelationshipName": "materialOutput",
+      "relationshipName": "destination",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

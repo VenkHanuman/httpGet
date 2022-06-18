@@ -1,0 +1,28 @@
+{
+  "invMgmtApplicationApp": {
+    "gRNLot": {
+      "home": {
+        "title": "GRN Lots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new GRN Lot",
+        "createOrEditLabel": "Create or edit a GRN Lot",
+        "notFound": "No GRN Lots found"
+      },
+      "created": "A new GRN Lot is created with identifier {{ param }}",
+      "updated": "A GRN Lot is updated with identifier {{ param }}",
+      "deleted": "A GRN Lot is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete GRN Lot {{ id }}?"
+      },
+      "detail": {
+        "title": "GRN Lot"
+      },
+      "id": "ID",
+      "grnCode": "Grn Code",
+      "collectionDate": "Collection Date",
+      "vehicleNumber": "Vehicle Number",
+      "srcOfMaterials": "Src Of Materials",
+      "totalWeight": "Total Weight"
+    }
+  }
+}

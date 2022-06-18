@@ -1,0 +1,28 @@
+{
+  "invMgmtApplicationApp": {
+    "gRNLot": {
+      "home": {
+        "title": "GRN Lots",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "GRN Lot-ஐ உருவாக்கு",
+        "createOrEditLabel": "GRN Lot -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No GRN Lots found"
+      },
+      "created": "GRN Lot புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "GRN Lot மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A GRN Lot நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் GRN Lot {{ id }}?"
+      },
+      "detail": {
+        "title": "GRN Lot"
+      },
+      "id": "ID",
+      "grnCode": "Grn Code",
+      "collectionDate": "Collection Date",
+      "vehicleNumber": "Vehicle Number",
+      "srcOfMaterials": "Src Of Materials",
+      "totalWeight": "Total Weight"
+    }
+  }
+}

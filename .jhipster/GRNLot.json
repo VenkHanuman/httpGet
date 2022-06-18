@@ -1,0 +1,38 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101422",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "grn_lot",
+  "fields": [
+    {
+      "fieldName": "grnCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "collectionDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "vehicleNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "srcOfMaterials",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalWeight",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "javadoc": "GRN Lot entity.\\n@author The SgSv team.",
+  "jpaMetamodelFiltering": false,
+  "name": "GRNLot",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

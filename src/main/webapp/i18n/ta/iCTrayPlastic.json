@@ -1,0 +1,25 @@
+{
+  "invMgmtApplicationApp": {
+    "iCTrayPlastic": {
+      "home": {
+        "title": "IC Tray Plastics",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "IC Tray Plastic-ஐ உருவாக்கு",
+        "createOrEditLabel": "IC Tray Plastic -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No IC Tray Plastics found"
+      },
+      "created": "IC Tray Plastic புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "IC Tray Plastic மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A IC Tray Plastic நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் IC Tray Plastic {{ id }}?"
+      },
+      "detail": {
+        "title": "IC Tray Plastic"
+      },
+      "id": "ID",
+      "brandName": "Brand Name",
+      "material": "Material"
+    }
+  }
+}

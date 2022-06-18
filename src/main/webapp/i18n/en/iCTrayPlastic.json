@@ -1,0 +1,25 @@
+{
+  "invMgmtApplicationApp": {
+    "iCTrayPlastic": {
+      "home": {
+        "title": "IC Tray Plastics",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new IC Tray Plastic",
+        "createOrEditLabel": "Create or edit a IC Tray Plastic",
+        "notFound": "No IC Tray Plastics found"
+      },
+      "created": "A new IC Tray Plastic is created with identifier {{ param }}",
+      "updated": "A IC Tray Plastic is updated with identifier {{ param }}",
+      "deleted": "A IC Tray Plastic is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete IC Tray Plastic {{ id }}?"
+      },
+      "detail": {
+        "title": "IC Tray Plastic"
+      },
+      "id": "ID",
+      "brandName": "Brand Name",
+      "material": "Material"
+    }
+  }
+}

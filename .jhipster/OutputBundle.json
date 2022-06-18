@@ -1,0 +1,25 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101428",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "output_bundle",
+  "fields": [
+    {
+      "fieldName": "total",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "totalOfDisposableWaste",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "OutputBundle",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

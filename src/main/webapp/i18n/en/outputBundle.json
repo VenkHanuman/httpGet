@@ -1,0 +1,25 @@
+{
+  "invMgmtApplicationApp": {
+    "outputBundle": {
+      "home": {
+        "title": "Output Bundles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Output Bundle",
+        "createOrEditLabel": "Create or edit a Output Bundle",
+        "notFound": "No Output Bundles found"
+      },
+      "created": "A new Output Bundle is created with identifier {{ param }}",
+      "updated": "A Output Bundle is updated with identifier {{ param }}",
+      "deleted": "A Output Bundle is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Output Bundle {{ id }}?"
+      },
+      "detail": {
+        "title": "Output Bundle"
+      },
+      "id": "ID",
+      "total": "Total",
+      "totalOfDisposableWaste": "Total Of Disposable Waste"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "invMgmtApplicationApp": {
+    "disposedWaste": {
+      "home": {
+        "title": "Disposed Wastes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Disposed Waste",
+        "createOrEditLabel": "Create or edit a Disposed Waste",
+        "notFound": "No Disposed Wastes found"
+      },
+      "created": "A new Disposed Waste is created with identifier {{ param }}",
+      "updated": "A Disposed Waste is updated with identifier {{ param }}",
+      "deleted": "A Disposed Waste is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Disposed Waste {{ id }}?"
+      },
+      "detail": {
+        "title": "Disposed Waste"
+      },
+      "id": "ID",
+      "subTotal": "Sub Total"
+    }
+  }
+}

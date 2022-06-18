@@ -1,0 +1,25 @@
+{
+  "invMgmtApplicationApp": {
+    "destination": {
+      "home": {
+        "title": "Destinations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Destination-ஐ உருவாக்கு",
+        "createOrEditLabel": "Destination -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Destinations found"
+      },
+      "created": "Destination புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Destination மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Destination நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Destination {{ id }}?"
+      },
+      "detail": {
+        "title": "Destination"
+      },
+      "id": "ID",
+      "name": "Name",
+      "materialOutput": "Material Output"
+    }
+  }
+}

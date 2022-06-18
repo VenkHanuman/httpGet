@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="material">
+      <h2 data-cy="materialDetailsHeading"><span jhiTranslate="invMgmtApplicationApp.material.detail.title">Material</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ material.id }}</span>
+        </dd>
+        <dt>
+          <span
+            jhiTranslate="invMgmtApplicationApp.material.typeOfMaterial"
+            [ngbTooltip]="'invMgmtApplicationApp.material.help.typeOfMaterial' | translate"
+            >Type Of Material</span
+          >
+        </dt>
+        <dd>
+          <span jhiTranslate="{{ 'invMgmtApplicationApp.MaterialType.' + material.typeOfMaterial }}">{{ material.typeOfMaterial }}</span>
+        </dd>
+        <dt><span jhiTranslate="invMgmtApplicationApp.material.subTotalWeight">Sub Total Weight</span></dt>
+        <dd>
+          <span>{{ material.subTotalWeight }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/material-my-suffix', material.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

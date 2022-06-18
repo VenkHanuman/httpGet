@@ -1,0 +1,26 @@
+{
+  "invMgmtApplicationApp": {
+    "materialOutput": {
+      "home": {
+        "title": "Material Outputs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Material Output-ஐ உருவாக்கு",
+        "createOrEditLabel": "Material Output -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Material Outputs found"
+      },
+      "created": "Material Output புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Material Output மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Material Output நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Material Output {{ id }}?"
+      },
+      "detail": {
+        "title": "Material Output"
+      },
+      "id": "ID",
+      "typeOfMatrial": "Type Of Matrial",
+      "subTotal": "Sub Total",
+      "destination": "Destination"
+    }
+  }
+}

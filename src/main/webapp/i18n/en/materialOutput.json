@@ -1,0 +1,26 @@
+{
+  "invMgmtApplicationApp": {
+    "materialOutput": {
+      "home": {
+        "title": "Material Outputs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Material Output",
+        "createOrEditLabel": "Create or edit a Material Output",
+        "notFound": "No Material Outputs found"
+      },
+      "created": "A new Material Output is created with identifier {{ param }}",
+      "updated": "A Material Output is updated with identifier {{ param }}",
+      "deleted": "A Material Output is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Material Output {{ id }}?"
+      },
+      "detail": {
+        "title": "Material Output"
+      },
+      "id": "ID",
+      "typeOfMatrial": "Type Of Matrial",
+      "subTotal": "Sub Total",
+      "destination": "Destination"
+    }
+  }
+}

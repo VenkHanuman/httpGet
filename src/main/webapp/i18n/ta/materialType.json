@@ -1,0 +1,13 @@
+{
+  "invMgmtApplicationApp": {
+    "MaterialType": {
+      "null": "",
+      "PS": "PS",
+      "PC": "PC",
+      "ABS": "ABS",
+      "HIPS": "HIPS",
+      "PET": "PET",
+      "HDPE": "HDPE"
+    }
+  }
+}

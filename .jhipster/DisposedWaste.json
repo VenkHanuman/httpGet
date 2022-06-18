@@ -1,0 +1,21 @@
+{
+  "angularJSSuffix": "mySuffix",
+  "applications": "*",
+  "changelogDate": "20220616101425",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "disposed_waste",
+  "fields": [
+    {
+      "fieldName": "subTotal",
+      "fieldType": "Long"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DisposedWaste",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

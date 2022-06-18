@@ -1,0 +1,100 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2
+        id="jhi-grn-lot-my-suffix-heading"
+        data-cy="GRNLotCreateUpdateHeading"
+        jhiTranslate="invMgmtApplicationApp.gRNLot.home.createOrEditLabel"
+      >
+        Create or edit a GRN Lot
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="row mb-3" [hidden]="editForm.get('id')!.value == null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="invMgmtApplicationApp.gRNLot.grnCode" for="field_grnCode">Grn Code</label>
+          <input type="text" class="form-control" name="grnCode" id="field_grnCode" data-cy="grnCode" formControlName="grnCode" />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="invMgmtApplicationApp.gRNLot.collectionDate" for="field_collectionDate"
+            >Collection Date</label
+          >
+          <div class="d-flex">
+            <input
+              id="field_collectionDate"
+              data-cy="collectionDate"
+              type="datetime-local"
+              class="form-control"
+              name="collectionDate"
+              formControlName="collectionDate"
+              placeholder="YYYY-MM-DD HH:mm"
+            />
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="invMgmtApplicationApp.gRNLot.vehicleNumber" for="field_vehicleNumber"
+            >Vehicle Number</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="vehicleNumber"
+            id="field_vehicleNumber"
+            data-cy="vehicleNumber"
+            formControlName="vehicleNumber"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="invMgmtApplicationApp.gRNLot.srcOfMaterials" for="field_srcOfMaterials"
+            >Src Of Materials</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="srcOfMaterials"
+            id="field_srcOfMaterials"
+            data-cy="srcOfMaterials"
+            formControlName="srcOfMaterials"
+          />
+        </div>
+
+        <div class="row mb-3">
+          <label class="form-label" jhiTranslate="invMgmtApplicationApp.gRNLot.totalWeight" for="field_totalWeight">Total Weight</label>
+          <input
+            type="number"
+            class="form-control"
+            name="totalWeight"
+            id="field_totalWeight"
+            data-cy="totalWeight"
+            formControlName="totalWeight"
+          />
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
